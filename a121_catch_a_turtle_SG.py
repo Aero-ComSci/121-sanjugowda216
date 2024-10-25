@@ -11,7 +11,7 @@ score = 0
 sizes = [3,2,1,0.5]
 #-----countdown variables-----
 font_setup = ("Arial", 20, "normal")
-timer = 10
+timer = 30
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 #-----initialize turtle-----
