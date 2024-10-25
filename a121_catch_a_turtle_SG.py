@@ -5,6 +5,7 @@ import random as rand
 #-----game configuration----
 color = "pink"
 shape = 'triangle'
+stampcolor = ["green","black","yellow","red","lightpink","pink"]
 size = 3
 score = 0
 #-----countdown variables-----
@@ -32,6 +33,7 @@ def clicked(x,y):
     if timer_up==False:
         change_positioncolor()
         updatescore()
+        stampcolors()
     else:
         t.hideturtle()
 def change_positioncolor():
@@ -42,6 +44,7 @@ def change_positioncolor():
     new_color = rand.choice(colors)
     t.goto(new_x,new_y)
     wn.bgcolor(new_color)
+    
 def updatescore():
     global score
     font_setup = ("Arial", 20, "normal")
@@ -58,6 +61,12 @@ def countdown():
     counter.write("Timer: " + str(timer), font=font_setup)
     timer -= 1
     counter.getscreen().ontimer(countdown, counter_interval) 
+def stampcolors():
+    global stampcolor
+    rightnow = rand.choice(stampcolor)
+    t.fillcolor(rightnow)
+    t.stamp()
+    t.fillcolor("lightpink")
 
 #-----events----------------
 wn = turtle.Screen()
