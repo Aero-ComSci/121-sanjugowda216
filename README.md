@@ -2,7 +2,7 @@
 # 121CAT
 
 1.Follow all of the steps on the [Book](https://pltw.read.inkling.com/a/b/5310c007377c46e28d745961310f0c2e/p/93f2c351e3c34598b8b71bf2ebc40abe)
-
+** DONE **
 2. Complete the addigional features:
    ![image](https://github.com/user-attachments/assets/f99d7777-6fea-47e5-bf9a-fc452f835952)
 ** DONE **
